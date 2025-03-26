@@ -8,9 +8,12 @@
 
 
 def calculate_discount(price, discount_percent):
+     # Check if the discount percentage is 20% or higher
     if discount_percent >= 20:
+        # Calculate the discounted price and return it
         return price - (price * discount_percent / 100)
     else:
+         # If the discount is less than 20%, return the original price
         return price
     
 print(calculate_discount(100, 15))
